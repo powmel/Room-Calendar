@@ -19,4 +19,8 @@ node scripts/extract-pdf.js <input.pdf> data/sample.json
 The script uses [`pdf-parse`](https://www.npmjs.com/package/pdf-parse) and writes a JSON file with extracted lines. Parsing logic should be adjusted to match the layout of your timetable PDF.
 
 ## View sample web page
-Open `public/index.html` in a browser. It loads `data/sample.json` and renders a simple table of entries.
+Because the page fetches JSON via HTTP, you should serve the files using a local web server. After installing dependencies you can run:
+```bash
+npm run serve
+```
+Then open [http://localhost:8080/public/](http://localhost:8080/public/) in your browser. Alternatively, you can use the VS Code **Live Server** extension to preview `public/index.html`.

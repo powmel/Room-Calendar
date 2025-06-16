@@ -11,3 +11,11 @@ td, th {
   border: 1px solid #ccc;
   padding: 0.5rem;
 }
+
+.busy {
+  background-color: #fdd;
+}
+
+.free {
+  background-color: #dfd;
+}
